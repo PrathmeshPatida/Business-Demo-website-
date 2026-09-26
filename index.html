@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AVI — Wear The Story</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Archivo:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-brand">AVI</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+ 
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AVI</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span class="nav-icon">🔍</span>
+      <span class="nav-icon">♡</span>
+      <span class="nav-icon cart-icon">🛍 <sup>0</sup></span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#collections" class="mob-link">Collections</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#lookbook" class="mob-link">Lookbook</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+ 
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-sub reveal">New Season 2026</p>
+      <h1 class="hero-title reveal">
+        <span>Wear</span>
+        <em>The</em>
+        <span>Story</span>
+      </h1>
+      <p class="hero-desc reveal">Crafted for those who believe clothing is a language. Every stitch speaks. Every silhouette declares.</p>
+      <div class="hero-btns reveal">
+        <a href="#collections" class="btn-primary">Explore Collection</a>
+        <a href="#lookbook" class="btn-ghost">View Lookbook</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <svg viewBox="0 0 120 120">
+          <path id="badgePath" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+          <text>
+            <textPath href="#badgePath">AVI FASHION • SINCE 2020 • WEAR THE STORY •</textPath>
+          </text>
+        </svg>
+        <span>✦</span>
+      </div>
+    </div>
+  </section>
+ 
+ 
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>AVI</span><span>✦</span>
+      <span>NEW ARRIVALS</span><span>✦</span>
+      <span>SUMMER 2026</span><span>✦</span>
+      <span>WEAR THE STORY</span><span>✦</span>
+      <span>PREMIUM FABRIC</span><span>✦</span>
+      <span>AVI</span><span>✦</span>
+      <span>NEW ARRIVALS</span><span>✦</span>
+      <span>SUMMER 2026</span><span>✦</span>
+      <span>WEAR THE STORY</span><span>✦</span>
+      <span>PREMIUM FABRIC</span><span>✦</span>
+    </div>
+  </div>
+ 
+
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <p class="section-tag reveal">Our Collections</p>
+      <h2 class="section-title reveal">Dressed for Every Chapter</h2>
+    </div>
+    <div class="collections-grid">
+      <div class="col-card reveal" data-cat="Men">
+        <div class="col-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+          <div class="col-overlay">
+            <div class="col-items">
+              <span>Shirts</span><span>Jackets</span><span>Trousers</span>
+            </div>
+          </div>
+          <div class="col-placeholder">👔</div>
+        </div>
+        <div class="col-info">
+          <h3>Men's Edit</h3>
+          <p>Sharp lines. Quiet luxury.</p>
+          <a href="#" class="col-link">Shop Now →</a>
+        </div>
+      </div>
+      <div class="col-card reveal large" data-cat="Women">
+        <div class="col-img" style="background: linear-gradient(135deg, #2d1b33 0%, #4a1942 100%);">
+          <div class="col-overlay">
+            <div class="col-items">
+              <span>Dresses</span><span>Blouses</span><span>Co-ords</span>
+            </div>
+          </div>
+          <div class="col-placeholder">👗</div>
+        </div>
+        <div class="col-info">
+          <h3>Women's Edit</h3>
+          <p>Fluid. Bold. Feminine power.</p>
+          <a href="#" class="col-link">Shop Now →</a>
+        </div>
+      </div>
+      <div class="col-card reveal" data-cat="Unisex">
+        <div class="col-img" style="background: linear-gradient(135deg, #0d2137 0%, #1b3a4b 100%);">
+          <div class="col-overlay">
+            <div class="col-items">
+              <span>Hoodies</span><span>Tees</span><span>Joggers</span>
+            </div>
+          </div>
+          <div class="col-placeholder">🧥</div>
+        </div>
+        <div class="col-info">
+          <h3>Unisex Drop</h3>
+          <p>Comfortable. Unapologetic.</p>
+          <a href="#" class="col-link">Shop Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <section class="products" id="products">
+    <div class="section-header">
+      <p class="section-tag reveal">Hot Right Now</p>
+      <h2 class="section-title reveal">New Arrivals</h2>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal" data-id="1">
+        <div class="product-img">
+          <div class="prod-placeholder"><img src="../shopping.webp" alt="Woven Texture Scarf"></div>
+          <div class="product-tags"><span class="tag new">New</span></div>
+          <div class="product-actions">
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+            <button class="quickview-btn" data-product="1">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="prod-category">Accessories</p>
+          <h4>Woven Texture Scarf</h4>
+          <div class="prod-price">
+            <span class="price">₹1,299</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-id="2">
+        <div class="product-img">
+          <div class="prod-placeholder">
+            <img src="../T-shirt.avif" alt="T-Shirt">
+          </div>
+          <div class="product-tags"><span class="tag sale">Sale</span></div>
+          <div class="product-actions">
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+            <button class="quickview-btn" data-product="2">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="prod-category">Men</p>
+          <h4>T-Shirt</h4>
+          <div class="prod-price">
+            <span class="price">₹499</span>
+            <span class="old-price">₹800</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-id="3">
+        <div class="product-img">
+          <div class="prod-placeholder">
+            <img src="../jackets '.webp" alt="Jackets">
+          </div>
+          <div class="product-tags"><span class="tag new">New</span></div>
+          <div class="product-actions">
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+            <button class="quickview-btn" data-product="3">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="prod-category">Mens Jackets</p>
+          <h4>Jackets</h4>
+          <div class="prod-price">
+            <span class="price">₹2,799</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-id="4">
+        <div class="product-img">
+          <div class="prod-placeholder">
+            <img src="../goodie.webp" alt="Oversized Hoodie">
+          </div>
+          <div class="product-tags"><span class="tag bestseller">Best Seller</span></div>
+          <div class="product-actions">
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+            <button class="quickview-btn" data-product="4">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="prod-category">Unisex</p>
+          <h4>Oversized Hoodie</h4>
+          <div class="prod-price">
+            <span class="price">₹1,199</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-visual">
+      <div class="about-shape"></div>
+      <div class="about-img-box">
+        <div class="about-emoji">
+          <img src="C:\Users\nikit\OneDrive\Desktop\AviProgram\forntend\web page\Gemini_Generated_Image_3fdb333fdb333fdb.png" id="about-img">
+        </div>
+        <div class="about-accent-text">Est. 2020</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-tag reveal">Our Philosophy</p>
+      <h2 class="section-title reveal">Fashion is not just <em>clothing</em> — it's a <em>conversation</em></h2>
+      <p class="about-text reveal">AVI was born from a belief that what you wear tells the world who you are before you say a word. We design with intent — every piece is purposeful, every fabric chosen carefully, every cut refined to make you feel extraordinary in the ordinary.</p>
+      <div class="about-stats reveal">
+        <div class="stat"><strong>200+</strong><span>Designs</span></div>
+        <div class="stat"><strong>15K+</strong><span>Happy Customers</span></div>
+        <div class="stat"><strong>100%</strong><span>Ethically Made</span></div>
+      </div>
+      <a href="#collections" class="btn-primary reveal">Discover More</a>
+    </div>
+  </section>
+ 
+  <section class="lookbook" id="lookbook">
+    <div class="section-header">
+      <p class="section-tag reveal">Lookbook</p>
+      <h2 class="section-title reveal">Styled By Life</h2>
+    </div>
+    <div class="lookbook-grid">
+      <div class="look-item reveal tall">
+        <div class="look-img" style="background: linear-gradient(160deg,#1a1a2e,#c79a3a)">
+          <div class="look-emoji">🌿</div>
+        </div>
+        <div class="look-caption">Earthy Evenings</div>
+      </div>
+      <div class="look-item reveal">
+        <div class="look-img" style="background: linear-gradient(160deg,#3d1c5a,#e94560)">
+          <div class="look-emoji">🌙</div>
+        </div>
+        <div class="look-caption">Midnight Drama</div>
+      </div>
+      <div class="look-item reveal">
+        <div class="look-img" style="background: linear-gradient(160deg,#0d4c6e,#e8c56d)">
+          <div class="look-emoji">☀️</div>
+        </div>
+        <div class="look-caption">Golden Hours</div>
+      </div>
+      <div class="look-item reveal wide">
+        <div class="look-img" style="background: linear-gradient(160deg,#1b4332,#b7e4c7)">
+          <div class="look-emoji">🌲</div>
+        </div>
+        <div class="look-caption">Into the Wild</div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="testimonials">
+    <div class="section-header">
+      <p class="section-tag reveal">What People Say</p>
+      <h2 class="section-title reveal">Voices of AVI</h2>
+    </div>
+    <div class="testimonials-slider" id="testSlider">
+      <div class="test-card active">
+        <p class="test-quote">"AVI changed how I dress. The fabric quality is unlike anything I've found at this price point. I get compliments every single time."</p>
+        <div class="test-author">
+          <div class="test-avatar">K</div>
+          <div>
+            <strong>Kartik S.</strong>
+            <span>Mumbai, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <p class="test-quote">"From the packaging to the product — every detail felt premium. The Oversized Hoodie is my most worn piece this winter."</p>
+        <div class="test-author">
+          <div class="test-avatar">R</div>
+          <div>
+            <strong>Rahul M.</strong>
+            <span>Delhi, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <p class="test-quote">"Ordered the Mens Jacket for a wedding and I was glowing. I've never felt this confident in an outfit. Will be back for more."</p>
+        <div class="test-author">
+          <div class="test-avatar">H</div>
+          <div>
+            <strong>Harsh Gupta</strong>
+            <span>Hyderabad, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="test-dots" id="testDots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+ 
+  <section class="newsletter">
+    <div class="newsletter-inner reveal">
+      <p class="section-tag">Join the AVI Circle</p>
+      <h2>Get Early Access & <em>Exclusive Drops</em></h2>
+      <p>Subscribe to receive new arrivals, style guides, and members-only offers.</p>
+      <form class="newsletter-form" id="newsForm">
+        <input type="email" placeholder="Enter your email address" id="newsEmail" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="news-note" id="newsMsg"></p>
+    </div>
+  </section>
+ 
+  <section class="contact" id="contact">
+    <div class="contact-left reveal">
+      <p class="section-tag">Get In Touch</p>
+      <h2>Let's Talk <em>Fashion</em></h2>
+      <p>Whether it's a collaboration, bulk inquiry, or just a style question — we're here for it.</p>
+      <div class="contact-details">
+        <div class="detail"><span>📧</span><a href="mailto:hello@avifashion.com">hello@avifashion.com</a></div>
+        <div class="detail"><span>📞</span><a href="tel:+919876543210">+91 89 5930 9357</a></div>
+        <div class="detail"><span>📍</span><span>Indore, Madhya Pradesh, India</span></div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social">Instagram</a>
+        <a href="#" class="social">Pinterest</a>
+        <a href="#" class="social">Facebook</a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required id="cName"/>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required id="cEmail"/>
+      </div>
+      <div class="form-group">
+        <select id="cSubject">
+          <option value="">Select Subject</option>
+          <option>New Order</option>
+          <option>Style Consultation</option>
+          <option>Bulk / Wholesale</option>
+          <option>Collaboration</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" rows="5" id="cMessage" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p id="formMsg" class="form-feedback"></p>
+    </form>
+  </section>
+ 
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>AVI</h2>
+        <p>Wear The Story.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Men's Collection</a></li>
+            <li><a href="#">Women's Collection</a></li>
+            <li><a href="#">Unisex Drop</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About AVI</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AVI Fashion. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+ 
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+ 
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
